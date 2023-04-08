@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h4 class="line1">My Matches <a routerLink="/tinder-slider"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a></h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="profile-head">
+                <h2 class="line2">8 profiles pending with me <span>5 NEW</span> </h2>
+            </div>
+        </div>       
+    </div>
+    <div class="slider-sec">
+        <div class="row">
+            <div class="col-md-12">
+                <owl-carousel-o [options]="customOptions">
+                    <ng-template carouselSlide *ngFor="let item of profileData">
+                        <div class="card">
+                            <a routerLink="/home-detils/{{item.id}}"><img src="{{item.image_url}}" class="card-img-top" alt="img"></a>
+                            <div class="card-body">
+                                <a routerLink="/home-detils/{{item.id}}"><h5 class="card-title">{{item.prof_name}}</h5>
+                                    <p class="card-text">{{item.details}}{{item.details1}}</p></a>
+                                <a (click)="clickMarked(item.id)" class="btn btn-light ybtn">Yes</a>
+                                <a (click)="clickPresent(item.id)" class="btn btn-light">No</a>
+                            </div>
+                        </div>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>

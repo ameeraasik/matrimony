@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="details-sec">
+        <div class="row">
+            <div class="col-md-12" *ngIf="profileDetails.length > 0">
+                <owl-carousel-o [options]="customOptions" *ngFor="let item of profileDetails">
+                    <ng-template carouselSlide *ngFor="let data of item.image">
+                        <div class="profile-img">
+                            <div class="go-back">
+                                <a routerLink="/"><i class="fa fa-arrow-left" aria-hidden="true"></i> <span>{{item.id1}}</span></a>
+                            </div>
+                            <img src="{{data.images}}" height="300px" class="card-img-top" alt="img">
+                        </div>
+                    </ng-template>
+                </owl-carousel-o>
+                <div class="card" *ngFor="let item of profileDetails">
+                    <div class="card-body">
+                        <h5 class="card-title">{{item.prof_name}}</h5>
+                        <p class="card-text">{{item.details}}{{item.details1}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

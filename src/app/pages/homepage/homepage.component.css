@@ -1,0 +1,36 @@
+.card{
+    margin: 10px;
+    min-height: 500px !important;
+    width: 250px !important;
+}
+
+.line1{
+    margin: 15px;
+    color: white;
+}
+
+.line2{
+    margin: 15px;
+    color: white;
+}
+
+.line1 a i{
+    float: right;
+    color: #fff !important;
+}
+
+.ybtn{
+    background-color: #FF9800 !important;
+    border-radius: 30px;
+}
+
+.profile-head span{
+    border: 1px solid #fff;
+    border-radius: 30px;
+    font-size: 10px;
+    padding: 3px 10px;
+}
+.card-body a{
+    text-decoration: none;
+    color: black;
+}

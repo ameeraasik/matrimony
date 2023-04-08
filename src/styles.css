@@ -1,0 +1,26 @@
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import 'ngx-toastr/toastr';
+
+body{
+    background-color: #0d6efd;
+}
+.slider-sec .owl-carousel .owl-item img {
+    display: flex !important;
+    height: 300px !important;
+}
+.slider-sec .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block !important;
+}
+.btn-light{
+   margin: 5px;
+   border-radius: 30px;
+}
+
+.details-sec .owl-nav {
+    display: none !important;
+}
+.details-sec .owl-theme .owl-dots{
+    position: relative !important;
+    top: -35px !important;
+}
